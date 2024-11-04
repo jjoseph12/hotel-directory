@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Error 1: Root element is Hotel instead of Hotels -->
+<!-- Error 1: Root element is incorrectly named 'Hotel' instead of 'Hotels' -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      xsi:noNamespaceSchemaLocation="Hotels.xsd">
-    
-    <!-- Error 2: Missing required NearstAirport attribute -->
+
+     <!-- I will leave comments showing what each of them are since thats all what this file needs based on pdf description -->
+
+    <!-- Error 2: Missing required 'NearstAirport' attribute -->
     <Hotel Rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
         <Phone>800-937-8461</Phone>
-        <Address>
+        <Address> <!-- Missing 'NearstAirport' attribute -->
             <Number>11</Number>
             <Street>E.7th St</Street>
             <City>Tempe</City>
@@ -17,7 +19,7 @@
         </Address>
     </Hotel>
 
-    <!-- Error 3: Missing Phone element -->
+    <!-- Error 3: Missing 'Phone' element -->
     <Hotel>
         <Name>Marriott Phoenix Downtown</Name>
         <Address NearstAirport="Sky Harbor">
@@ -29,21 +31,21 @@
         </Address>
     </Hotel>
 
-    <!-- Error 4: Unclosed Address tag -->
+    <!-- Error 4: Unclosed 'Address' tag -->
     <Hotel>
         <Name>Hilton Scottsdale Resort</Name>
         <Phone>480-948-7750</Phone>
-        <Address NearstAirport="Sky Harbor">
+        <Address NearstAirport="Sky Harbor"> <!-- Missing closing tag -->
             <Number>6333</Number>
             <Street>N Scottsdale Road</Street>
             <City>Scottsdale</City>
             <State>AZ</State>
             <Zip>85250</Zip>
 
-    <!-- Error 5: Two names for one hotel -->
+    <!-- Error 5: Duplicate 'Name' elements -->
     <Hotel Rating="4.8">
         <Name>Four Seasons Resort Scottsdale</Name>
-        <Name>Four Seasons Resort</Name>
+        <Name>Four Seasons Resort</Name> <!-- Duplicate 'Name' -->
         <Phone>480-515-5700</Phone>
         <Address NearstAirport="Sky Harbor">
             <Number>10600</Number>
