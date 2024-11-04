@@ -1,26 +1,140 @@
-<Hotels>
-    <Hotel Rating="4.2">
-        <Name>Westin</Name>
-        <Phone>480-968-8885</Phone>
-        <Phone>800-937-8461</Phone>
-        <Address NearestAirport="Sky Harbor">
-            <Number>11</Number>
-            <Street>E.7th St</Street>
-            <City>Tempe</City>
-            <State>AZ</State>
-            <Zip>85281</Zip>
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+    
+    <!-- Hotel 1: Example hotel from Figure 1 from pdf (we can use this as said in pdf)-->
+    <Hotel Rating="4.2"> <!-- Hotel element with optional Rating attribute -->
+        <Name>Westin</Name> <!-- Hotel name -->
+        <Phone>480-968-8885</Phone> <!-- Primary phone -->
+        <Phone>800-937-8461</Phone> <!-- Secondary phone -->
+        <Address NearstAirport="Sky Harbor"> <!-- Address with required NearstAirport attribute -->
+            <Number>11</Number> <!-- Street number -->
+            <Street>E.7th St</Street> <!-- Street name -->
+            <City>Tempe</City> <!-- City -->
+            <State>AZ</State> <!-- State -->
+            <Zip>85281</Zip> <!-- Zip code -->
         </Address>
     </Hotel>
+
+    <!-- Hotel 2 -->
+    <Hotel Rating="4.5">
+        <Name>Marriott Phoenix Downtown</Name> <!-- Hotel name -->
+        <Phone>602-254-8888</Phone> <!-- Phone number -->
+        <Address NearstAirport="Sky Harbor">
+            <Number>100</Number> <!-- Street number -->
+            <Street>N 1st Street</Street> <!-- Street name -->
+            <City>Phoenix</City> <!-- City -->
+            <State>AZ</State> <!-- State -->
+            <Zip>85004</Zip> <!-- Zip code -->
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 3 -->
+    <Hotel> <!-- No Rating attribute (optional) -->
+        <Name>Hilton Scottsdale Resort</Name> <!-- Hotel name -->
+        <Phone>480-948-7750</Phone> <!-- Primary phone -->
+        <Phone>800-445-8667</Phone> <!-- Secondary phone -->
+        <Address NearstAirport="Sky Harbor">
+            <Number>6333</Number> <!-- Street number -->
+            <Street>N Scottsdale Road</Street> <!-- Street name -->
+            <City>Scottsdale</City> <!-- City -->
+            <State>AZ</State> <!-- State -->
+            <Zip>85250</Zip> <!-- Zip code -->
+        </Address>
+    </Hotel>
+
+  <!-- (For the sake of repeittion, I wont continue the format of laying the comments since its the same thing,  the other hotels will have the same pattern with the same things needed for each of them -->
+
+    <!-- Hotel 4 -->
+    <Hotel Rating="4.8">
+        <Name>Four Seasons Resort Scottsdale</Name> <!-- Hotel name -->
+        <Phone>480-515-5700</Phone> <!-- Phone number -->
+        <Address NearstAirport="Sky Harbor">
+            <Number>10600</Number> <!-- Street number -->
+            <Street>E Crescent Moon Dr</Street> <!-- Street name -->
+            <City>Scottsdale</City> <!-- City -->
+            <State>AZ</State> <!-- State -->
+            <Zip>85262</Zip> <!-- Zip code -->
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 5 -->
+    <Hotel Rating="4.3">
+        <Name>Arizona Biltmore</Name> <!-- Hotel name -->
+        <Phone>602-955-6600</Phone> 
+        <Phone>800-950-0086</Phone> 
+        <Address NearstAirport="Sky Harbor">
+            <Number>2400</Number> 
+            <Street>E Missouri Ave</Street> 
+            <City>Phoenix</City> 
+            <State>AZ</State> 
+            <Zip>85016</Zip> 
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 6 -->
     <Hotel>
-        <Name>Marriott</Name>
-        <Phone>123-456-7890</Phone>
-        <Address NearestAirport="Phoenix Airport">
-            <Number>123</Number>
-            <Street>Main St</Street>
-            <City>Phoenix</City>
-            <State>AZ</State>
-            <Zip>85004</Zip>
+        <Name>Hyatt Place Phoenix/Mesa</Name> <!-- Hotel name -->
+        <Phone>480-969-8200</Phone> 
+        <Address NearstAirport="Phoenix-Mesa Gateway">
+            <Number>1422</Number> 
+            <Street>W Bass Pro Drive</Street> 
+            <City>Mesa</City> 
+            <State>AZ</State> 
+            <Zip>85201</Zip> 
         </Address>
     </Hotel>
-    <!-- Add additional hotel entries here as needed -->
+
+    <!-- Hotel 7 -->
+    <Hotel Rating="4.1">
+        <Name>Sheraton Phoenix Downtown</Name> 
+        <Phone>602-262-2500</Phone> 
+        <Address NearstAirport="Sky Harbor">
+            <Number>340</Number> 
+            <Street>N 3rd Street</Street> 
+            <City>Phoenix</City> 
+            <State>AZ</State> 
+            <Zip>85004</Zip> 
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 8 -->
+    <Hotel Rating="3.9">
+        <Name>Courtyard Scottsdale Old Town</Name> 
+        <Phone>480-429-7785</Phone>
+        <Address NearstAirport="Sky Harbor">
+            <Number>3311</Number> 
+            <Street>N Scottsdale Rd</Street> 
+            <City>Scottsdale</City> 
+            <State>AZ</State> 
+            <Zip>85251</Zip> 
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 9 -->
+    <Hotel>
+        <Name>Renaissance Phoenix Downtown</Name> 
+        <Phone>602-333-0000</Phone> 
+        <Phone>800-309-8138</Phone> 
+        <Address NearstAirport="Sky Harbor">
+            <Number>100</Number> 
+            <Street>N 1st Street</Street> 
+            <City>Phoenix</City> 
+            <State>AZ</State> 
+            <Zip>85004</Zip> 
+        </Address>
+    </Hotel>
+
+    <!-- Hotel 10 -->
+    <Hotel Rating="4.4">
+        <Name>The Phoenician</Name> 
+        <Phone>480-941-8200</Phone> 
+        <Address NearstAirport="Sky Harbor">
+            <Number>6000</Number> 
+            <Street>E Camelback Rd</Street>
+            <City>Scottsdale</City> 
+            <State>AZ</State> 
+            <Zip>85251</Zip> 
+        </Address>
+    </Hotel>
 </Hotels>
