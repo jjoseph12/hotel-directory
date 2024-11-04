@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?> <!-- XML declaration -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!-- Root schema definition -->
 
+  <!-- Root 'Hotels' element containing multiple 'Hotel' entries -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
+        
+        <!-- 'Hotel' element can appear multiple times -->
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              
+              <!-- Hotel name -->
               <xs:element name="Name" type="xs:string"/>
+              
+              <!-- Phone numbers (multiple allowed) -->
               <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+              
+              <!-- Address details -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Number" type="xs:string"/>
-                    <xs:element name="Street" type="xs:string"/>
-                    <xs:element name="City" type="xs:string"/>
-                    <xs:element name="State" type="xs:string"/>
-                    <xs:element name="Zip" type="xs:string"/>
+                    <xs:element name="Number" type="xs:string"/> <!-- Street number -->
+                    <xs:element name="Street" type="xs:string"/> <!-- Street name -->
+                    <xs:element name="City" type="xs:string"/> <!-- City name -->
+                    <xs:element name="State" type="xs:string"/> <!-- State -->
+                    <xs:element name="Zip" type="xs:string"/> <!-- Zip code -->
                   </xs:sequence>
-                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
+                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/> <!-- Nearest airport -->
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
+            
+            <!-- Optional rating attribute -->
             <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
           </xs:complexType>
         </xs:element>
